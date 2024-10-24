@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3s$x3&h36g*87)&lfnt(%%+azg61&371ci+tiq*59vp-z5r)i1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['boogeraids.alwaysdata.net', 'www.boogeraids.alwaysdata.net', ]
+ALLOWED_HOSTS = ['boogeraids.alwaysdata.net', 'https://boogeraids.alwaysdata.net', 'http://boogeraids.alwaysdata.net']
 
 
 # Application definition
