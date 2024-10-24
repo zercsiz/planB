@@ -1,0 +1,50 @@
+{% extends "index.html " %}
+{% block content %}
+        <body>
+            <noscript>You need to enable JavaScript to run this app.</noscript>
+            <div id="root">
+                <div class="center">
+                    <div class="ticket-visual_visual">
+                        <div class="ticket-visual-wrapper py-30">
+                            <div class="ticket-visual_ticket-number-wrapper">
+                                <br>
+                                <div class="ticket-visual_ticket-number font-right">Ticket</div>
+                                <p>{{ user.email }}</p>
+                                <br>
+                            </div>
+                            <div class="ticket-visual_profile">
+                                <div class="ticket-profile_profile">
+                                    {% if user.image %}
+                                        <img width="100%" src={{user.image.url}} alt="Card Illustration" class="ticket-profile_image">
+                                    {% endif %}
+                                    <br>
+                                    <div class="ticket-profile_text font-mplus">{{time}} | <span class="meta" style="color: {{ color }}">{{ generated_code }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="ticket-visual_ticket-number-wrapper fields justify-center">
+                                <div class="ticket-visual_ticket-number bold pulsate">#{{user.number|stringformat:"05d"}}</div>
+                            </div>
+                            <br>
+                            <div class="flex justify-center gap-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <center class="text-center font-mplus">
+                    <small>
+                        <a rel="noreferrer" class="link" href="https://linktr.ee/mymakarim" target="_blank">Ask for help | Contact Dev</a>
+                    </small>
+                </center>
+            </div>
+            <ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important;" data-adsbygoogle-status="done" data-ad-status="unfilled">
+                <div id="aswift_0_host" style="border: medium; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;">
+                    <iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-5314642165735999&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;abgtt=6&amp;lmt=1729250124&amp;plat=9%3A134250504%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&amp;plas=452x688_l%7C452x688_r&amp;format=0x0&amp;url=https%3A%2F%2Fmagket.vercel.app%2F&amp;pra=5&amp;wgl=1&amp;aihb=0&amp;asro=0&amp;ailel=1~2~4~6~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aiael=1~2~4~6~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aicel=33&amp;aifxl=29_18~30_19&amp;aiixl=29_5~30_6&amp;aslmct=0.7&amp;asamct=0.7&amp;aiict=1&amp;itsi=-1&amp;aiombap=1&amp;aiopts=1&amp;aief=1&amp;dt=1729707555521&amp;bpp=2&amp;bdt=1756&amp;idt=459&amp;shv=r20241021&amp;mjsv=m202410210101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;eoidce=1&amp;nras=1&amp;correlator=7457267208123&amp;frm=20&amp;pv=2&amp;u_tz=180&amp;u_his=2&amp;u_h=900&amp;u_w=1440&amp;u_ah=852&amp;u_aw=1440&amp;u_cd=24&amp;u_sd=2&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1440&amp;bih=768&amp;scr_x=0&amp;scr_y=0&amp;eid=95343853%2C44759875%2C44759926%2C42533203%2C31088327%2C42532523%2C95344188%2C95345271%2C31088342%2C95344978&amp;oid=2&amp;pvsid=175052945915211&amp;tmod=297107838&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=-7%2C-7%2C-7%2C-7%2C1440%2C0%2C1453%2C865%2C1440%2C767&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;bz=1.01&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=483" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe>
+                </div>
+            </ins>
+            
+        </body>
+        <iframe id="google_esf" name="google_esf" src="https://pagead2.googlesyndication.com/pagead/html/r20241021/r20190131/zrt_lookup_fy2021.html" style="display: none;"></iframe></html>
+{% endblock%}
