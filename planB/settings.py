@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'planB.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'boogeraids_db ',
+        'NAME': 'boogeraids_db',
         'USER': 'boogeraids',
         'PASSWORD': 'yourtherichboy',
         'HOST': 'postgresql-boogeraids.alwaysdata.net',
