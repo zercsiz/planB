@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3s$x3&h36g*87)&lfnt(%%+azg61&371ci+tiq*59vp-z5r)i1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG")
+DEBUG = False
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(",")
+ALLOWED_HOSTS = ['boogeraids.alwaysdata.net', 'https://boogeraids.alwaysdata.net', 'http://boogeraids.alwaysdata.net']
 
 
 # Application definition
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'planB.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'boogeraids_db',
+        'USER': 'boogeraids',
+        'PASSWORD': 'yourtherichboy',
+        'HOST': 'postgresql-boogeraids.alwaysdata.net',
+        'PORT': '',
     }
 }
 

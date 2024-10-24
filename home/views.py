@@ -6,7 +6,6 @@ from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 import collections
 from datetime import datetime
-import pytz
 
 class HomeView(View, LoginRequiredMixin):
     def dispatch(self, request: HttpRequest, *args: Any, **kwargs: Any) -> HttpResponse:
@@ -31,8 +30,7 @@ class HomeView(View, LoginRequiredMixin):
         number_of_days_per_year = 365
 
         # Current date
-        tz = pytz.timezone('Asia/Nicosia')
-        current = datetime.now(tz)
+        current = datetime.now()
         day = current.day
 
         # Calculate index for color
